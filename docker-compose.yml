@@ -1,0 +1,12 @@
+version: "3"
+
+services: 
+  react_app:
+    container_name: new_website # [changable] give a suitable name
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" # update the port here where you want your app to run
+    volumes:
+      - ./:/project/app
