@@ -1,8 +1,8 @@
 version: "3"
 
 services: 
-  react_app:
-    container_name: new_website # [changable] give a suitable name
+  app:
+    container_name: react # [changable] give a suitable name
     build:
       context: .
       dockerfile: Dockerfile
